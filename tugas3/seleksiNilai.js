@@ -1,20 +1,17 @@
 const seleksiNilai = (nilaiAwal, nilaiAknir, arr) => {
   if (nilaiAwal > nilaiAknir) {
     //   validasi 1
-    console.log("Nilai akhir harus lebih besar dari nilai awal");
+    return "Nilai akhir harus lebih besar dari nilai awal";
   } else if (arr.length < 5) {
     //   validasi 2
-    console.log("Jumlah angka dalam dataArray harus lebih dari 5");
+    return "Jumlah angka dalam dataArray harus lebih dari 5";
   } else {
-    //   jalankan proses
-    hasil1 = arr.filter((nilaiAwal) => nilaiAwal <= nilaiAknir);
-    hasil2 = hasil1.filter((nilaiAknir) => nilaiAknir >= nilaiAwal);
-    sort = hasil2.sort((a, b) => a - b);
-
-    if (sort === []) {
-      console.log("nilai tidak di temukan");
+    //   jalankan proses mencari angka
+    hasil = arr.sort((a, b) => a - b).filter((nilai) => nilai > nilaiAwal && nilai < nilaiAknir);
+    if (hasil == 0) {
+      return "nilai tidak di temukan";
     } else {
-      console.log(sort);
+      return hasil;
     }
   }
 };

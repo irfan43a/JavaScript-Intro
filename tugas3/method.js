@@ -5,7 +5,7 @@
 // 1. chartAt(index)
 // method chartAt() digunakan untuk mencari atau menampilkan karakter dengan index yang spesifik
 const kataString = "Saaya sedang belajar bahasa pemrograman javascript";
-// console.log(kataString.charAt(0), kataString.charAt(3), kataString.charAt(5), kataString.charAt(9), kataString.charAt(48));
+console.log(kataString.charAt(0), kataString.charAt(3), kataString.charAt(5), kataString.charAt(9), kataString.charAt(48));
 
 // 2. charCodeAt(index)
 // method charCodeAt() di gunakan untuk mengembalikan kode unik atau khusus darin karakter yang di tentukan dari index
@@ -23,8 +23,8 @@ const StringFinal = string1.concat(string2, string3);
 // method substr() untuk mengembalikan karakter dalam bentuk string awal dalam lokasi spesifik sampai
 // dengan spesifik panjang karakter yang di ekstrak atauy diambil
 const kalimat = "Saya berenang ketepian";
-// console.log(kalimat.substr(1, 6));
-// console.log(kalimat.substr(5));
+console.log(kalimat.substr(1, 6));
+console.log(kalimat.substr(5));
 
 // Array method
 // 5. Array.from()
@@ -32,7 +32,6 @@ const kalimat = "Saya berenang ketepian";
 // juga bisa merubah string menjadi array atau membuat array baru dari data
 const arr = [1, 5, 6, 4, 8, 4];
 // console.log(Array.from(arr));
-// console.log(arr);
 
 const myString = "Hello Indonesia";
 // console.log(Array.from(myString));
@@ -58,7 +57,7 @@ const element = [10, 100, 200, 12, 14, 6];
 const buah = ["semangka", "nanas", "durian", "apel"];
 // console.log(buah);
 // console.log(buah.length);
-// const banyakbuah = buah.unshift("kedondong", "sirsak");
+const banyakbuah = buah.unshift("kedondong", "sirsak");
 // console.log(buah);
 // console.log(banyakbuah);
 
